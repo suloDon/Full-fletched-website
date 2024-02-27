@@ -1,4 +1,39 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.first-page{
+    height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.nav-side{
+    display: flex;
+    gap: 10px;
+}
+
+.nav-side h4{
+    border: 1px solid rgb(148, 139, 139);
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.nav-side h4::after{
+    
 }
