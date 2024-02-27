@@ -101,4 +101,92 @@ nav{
 .first-page video{
     width: 100%;
     border-radius: 15px;
+    z-index: 10;
+    position: relative;
+}
+
+.hero-shape{
+    width: 40vw;
+    height: 40vh;
+    
+    position: absolute;
+    right: 0;
+    top: 85vh;
+}
+
+.one-an{
+    background-color: #FF320C;
+    border-radius: 45%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    filter: blur(20px);
+    animation: moveThree;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+.two-an{
+    background-color: #FF320C;
+    border-radius: 45%;
+    height: 30vw;
+    width: 35vw;
+    position: absolute;
+    filter: blur(30px);
+    animation-name: moveTwo;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+.three-an{
+    background-color: #FF320C;
+    border-radius: 45%;
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    filter: blur(40px);
+    animation: moveOne;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes moveOne {
+    from{
+        transform: translate(-50%, -3%);
+    }
+    to{
+        transform: translate(0%, 10%);
+    }
+}
+
+@keyframes moveTwo {
+    from{
+        transform: translate(-5%, -5%);
+    }
+    to{
+        transform: translate(40%, 60%);
+    }
+}
+
+@keyframes moveThree {
+    from{
+        transform: translate(-10%, -20%);
+    }
+    to{
+        transform: translate(30%, 20%);
+    }
+}
+
+
+.second-page{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
 }
