@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "santa";
+    
 }
 
 .first-page{
@@ -16,6 +17,7 @@
     width: 100%;
     position: relative;
     background-color: #EFEAE3;
+    box-sizing: border-box;
 }
 
 nav{
@@ -110,7 +112,7 @@ nav{
     height: 40vh;
     
     position: absolute;
-    right: 0;
+    right: 100px;
     top: 85vh;
 }
 
@@ -185,8 +187,62 @@ nav{
 }
 
 
+
+
+.move h1{
+    font-size: 9vw;
+}
+
+#circle{
+    width: 40px;
+    height: 40px;
+    background-color: #FF320C;
+    border-radius: 50%;
+    filter: blur(5px);
+}
+
+.move-main{
+    display: flex;
+    white-space: nowrap;
+    z-index: 10;
+    position: relative;
+    gap: 30px;
+    overflow-x: auto;
+    margin-top: 100px;
+    background-color: #EFEAE3;
+    
+}
+
+.move-main::-webkit-scrollbar{
+    display: none;
+}
+
+.move{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    animation-name: moveRight;
+    animation-iteration-count: infinite;
+    animation-delay: .3s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-direction:normal;
+
+}
+
+@keyframes moveRight {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
 .second-page{
     min-height: 100vh;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
 }
