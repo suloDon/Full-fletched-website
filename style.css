@@ -28,7 +28,7 @@ nav{
     position: fixed;
     justify-content: space-between;
     padding: 30px;
-    z-index: 15;
+    z-index: 20;
     background-color: #EFEAE3;
 }
 
@@ -98,6 +98,8 @@ nav{
     text-transform: uppercase;
     line-height: 8vw;
     text-align: right;
+    position: relative;
+    z-index: 10;
     
 }
 
@@ -178,6 +180,8 @@ nav{
     font-size: 4vw;
     width: 54%;
     line-height: 4vw;
+    position: relative;
+    z-index: 10;
 }
 
 
@@ -206,27 +210,22 @@ nav{
     color: rgb(63, 61, 61);
     margin-top: 2vw;
     font-size: 1vw;
+   
 
 }
 
 
-.hero-shape{
-    width: 40vw;
-    height: 40vh;
-    
-    position: absolute;
-    right: 100px;
-    top: 85vh;
-}
 .hero-shape{
     background-color: #FF320C;
     border-radius: 45%;
-    height: 30vw;
+    right: 50px;
+    top: 60vh;
+    height: 25vw;
     width: 30vw;
     position: absolute;
     filter: blur(40px);
     animation: moveOne;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -235,9 +234,38 @@ nav{
 
 @keyframes moveOne {
     from{
-        transform: translate(-50%, -3%);
+        transform: translate(-40%, -12%)skew(0);
     }
     to{
-        transform: translate(0%, 10%);
+        transform: translate(0%, 10%)skew(10deg);
     }
 }
+
+
+
+.hero-shape-2{
+    background: linear-gradient(#FF320C,#ff5d0c);
+    border-radius: 45%;
+    height: 30vw;
+    left: 15vw;
+    width: 30vw;
+    position: absolute;
+    filter: blur(40px);
+    animation: movetwo;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes movetwo {
+    from{
+        transform: translate(-50%, -3%) skew(0);
+    }
+    to{
+        transform: translate(0%, 10%)skew(13deg);
+    }
+}
+
+

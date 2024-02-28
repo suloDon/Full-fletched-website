@@ -1,0 +1,69 @@
+@font-face {
+    font-family: santa;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "santa";
+    
+}
+
+.third-page{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 6vw 0;
+}
+
+.items{
+    height: 130px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    padding: 0 2vw;
+    display: flex;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+.items h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 10;
+}
+
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    border: 1px solid black;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    transition: all .3s ;
+}
+
+.items:hover .overlay{
+    top: 0;
+
+}
+
+.fixed-image{
+    position: fixed;
+    height: 35vw;
+    width: 20vw;
+    z-index: 11;
+
+    left: 50%;
+    display: none;
+    border-radius: 10px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
